@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-  <CodeSnippet Format="1.0.0">
-    <Header>
-      <Title>simple_temp</Title>
-      <Shortcut>simple_temp</Shortcut>
-      <Description></Description>
-      <Author></Author>
-    </Header>
-    <Snippet>
-      <Declarations>
-        <Literal Editable="false"></Literal>
-      </Declarations>
-      <Code Language="csharp"><![CDATA[
-//強連結成分分解
+// 強連結成分分解
 typedef struct StronglyConnectedComponents {
 	int n, group = 0;
 	vector<vector<int>>& g;
@@ -39,7 +25,7 @@ typedef struct StronglyConnectedComponents {
 				if (s != t) dag[s].emplace_back(t);
 			}
 		}
-		//多重辺を落とす
+		// 多重辺を落とす
 		for (auto&& v : dag) {
 			sort(v.begin(), v.end());
 			v.erase(unique(v.begin(), v.end()), v.end());
@@ -47,7 +33,7 @@ typedef struct StronglyConnectedComponents {
 		return dag;
 	}
 
-	//各成分にどの頂点が属しているか
+	// 各成分にどの頂点が属しているか
 	vector<vector<int>> groups() {
 		vector<vector<int>> res(group);
 		for (int i = 0; i < n; i++) {
@@ -70,7 +56,7 @@ private:
 			}
 		}
 	}
-	//非再起dfs
+	// 非再起dfs
 	void dfs(int cur) {
 		stack<pair<int, bool>> st;
 		st.emplace(cur, true);
@@ -105,7 +91,7 @@ private:
 		}
 	}
 
-	/*再起dfs
+	/* 再起dfs
 	void dfs(int v) {
 		seen[v] = 1;
 		for (auto&& nv : g[v]) {
@@ -124,7 +110,3 @@ private:
 	}
 	*/
 } SCC;
-$end$]]></Code>
-    </Snippet>
-  </CodeSnippet>
-</CodeSnippets>
