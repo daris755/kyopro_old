@@ -1,5 +1,3 @@
-#pragma once
-
 // 階乗・組合せの逆元
 class FactorialMod {
 	void calc_inverse() {
