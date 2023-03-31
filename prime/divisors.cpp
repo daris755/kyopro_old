@@ -1,4 +1,4 @@
-vector<ll> enumDivisors(ll n) {
+vector<ll> ivisors(ll n) {
 	vector<ll> res;
 	for (ll i = 1; i * i <= n; i++) {
 		if (n % i == 0) {
@@ -6,6 +6,6 @@ vector<ll> enumDivisors(ll n) {
 			if (n / i != i) res.push_back(n / i);
 		}
 	}
-	sort(all(res));
+	sort(res.begin(), res.end());
 	return res;
 }
