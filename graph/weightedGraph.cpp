@@ -1,5 +1,5 @@
 // 重み付きグラフ
-auto weighted_graph(int n, int m, bool directed = 0, int origin = 1) {
+auto weightedGraph(int n, int m, bool directed = 0, int origin = 1) {
 	struct Edge {
 		int to; ll w;
 		Edge(int to, ll w) : to(to), w(w) {}
