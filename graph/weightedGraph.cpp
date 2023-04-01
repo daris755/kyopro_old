@@ -15,4 +15,3 @@ auto weightedGraph(int n, int m, bool directed = 0, int origin = 1) {
 	}
 	return g;
 }
-
