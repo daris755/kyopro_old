@@ -56,7 +56,7 @@ private:
 			}
 		}
 	}
-	// 非再起dfs
+	// 非再帰ｄｆｓ
 	void dfs(int cur) {
 		stack<pair<int, bool>> st;
 		st.emplace(cur, true);
@@ -91,7 +91,7 @@ private:
 		}
 	}
 
-	/* 再起dfs
+	/* 再帰ｄｆｓ
 	void dfs(int v) {
 		seen[v] = 1;
 		for (auto&& nv : g[v]) {
