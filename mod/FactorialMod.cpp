@@ -25,7 +25,7 @@ public:
 		mod = _mod;
 		inverse = vector<ll>(max_num + 1);
 		factorial = vector<ll>(max_num + 1);
-		factorial_inverse = vll(max_num + 1);
+		factorial_inverse = vector<ll>(max_num + 1);
 		calc_inverse();
 		calc_factorial_inverse();
 	}
