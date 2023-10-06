@@ -29,7 +29,7 @@ struct MontgomeryModInt64 {
     
     static u64 get_inv() {
         // ニュートン法
-        // https://math-koshimizu.hatenablog.jp/entry/2016/12/15/000000
+        // https://qiita.com/hotman78/items/f0e6d2265badd84d429a
         u64 xn = mod;
         for (int i = 0; i < 5; i++) xn = xn * (2 - mod * xn);
         return xn;
