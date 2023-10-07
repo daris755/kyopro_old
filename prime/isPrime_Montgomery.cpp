@@ -99,6 +99,7 @@ struct MontgomeryModInt64 {
 typename MontgomeryModInt64::u64
 MontgomeryModInt64::mod, MontgomeryModInt64::inv, MontgomeryModInt64::r;
 
+// kをテストの回数として O(klogn)
 // https://drken1215.hatenablog.com/entry/2023/05/23/233000
 bool miller_rabin(ll n, vector<ll> A) {
     using mint = MontgomeryModInt64;
